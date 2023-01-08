@@ -9,6 +9,9 @@ public class ArithmeticOperators {
         * 	/
         * 	%
         *
+        *   ++
+        *   --
+        *
         * The result of an arithmetic operation is of AT LEAST type int.
         * If the operation involves operands that are 'wide' than int,
         * the result is of 'widest' type.
@@ -53,5 +56,21 @@ public class ArithmeticOperators {
         double d2 = Math.sqrt(-4);
         System.out.println("d2: " + d2); // NaN
 
+        /*
+         *   ++ , --
+         */
+        int x9 = 10;
+
+        x9++; // x9 = x9 + 1
+        System.out.println("1. x9 = " + x9); // 11
+
+        x9--; // x9 = x9 - 1
+        System.out.println("2. x9 = " + x9); // 10
+
+        ++x9; // x9 = x9 + 1
+        System.out.println("3. x9 = " + x9); // 11
+
+        --x9; // x9 = x9 - 1
+        System.out.println("4. x9 = " + x9); // 10
     }
 }
